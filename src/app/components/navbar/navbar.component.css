@@ -1,0 +1,33 @@
+mat-toolbar {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  background-color: #232859;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li > button,
+a {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 100;
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+}

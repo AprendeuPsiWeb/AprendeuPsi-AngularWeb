@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+  <a routerLink="/home"
+    ><img src="../../../assets/logonavb.svg" alt="Logotipo"
+  /></a>
+
+  <ul>
+    <li>
+      <button mat-button [matMenuTriggerFor]="cursos">
+        Cursos
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+      <mat-menu #cursos="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="prontuario">
+          Descomplicando o Prontuário
+        </button>
+        <button mat-menu-item [matMenuTriggerFor]="psicofarmacologia">
+          Psicofarmacologia
+        </button>
+        <button mat-menu-item [matMenuTriggerFor]="ferias">
+          Cursos de férias
+        </button>
+      </mat-menu>
+    </li>
+
+    <li>
+      <button mat-button [matMenuTriggerFor]="formacao">
+        Formação
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+      <mat-menu #formacao="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="formacaosus">
+          Psicologia no Sistema Único de Saúde - SUS
+        </button>
+      </mat-menu>
+    </li>
+
+    <li>
+      <a routerLink="/about-us">Sobre nós</a>
+    </li>
+  </ul>
+</mat-toolbar>
