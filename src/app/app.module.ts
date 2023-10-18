@@ -10,9 +10,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, AboutUsComponent, HomeComponent],
+  declarations: [AppComponent, NavbarComponent, AboutUsComponent, HomeComponent, CarouselComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

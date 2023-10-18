@@ -1,14 +1,21 @@
 mat-toolbar {
   height: 80px;
+  width: 100vw;
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
   background-color: #232859;
+
+  padding: 0 10%;
 }
 
 ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 li {
@@ -24,10 +31,18 @@ a {
   background-color: transparent;
   border: none;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 500;
 
   color: #ffffff;
 
   display: flex;
   align-items: center;
+}
+
+.whatsBtn {
+  display: flex;
+  gap: 5px;
+  border: solid 1px #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
 }

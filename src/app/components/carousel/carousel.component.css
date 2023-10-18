@@ -1,0 +1,63 @@
+.carousel__container {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px #dce1e1;
+}
+
+.carousel__container img {
+  display: none;
+  border-radius: 15px;
+}
+
+.carousel__container img.image-active {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* dots/indicators */
+
+.carousel-dot__container {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  background-color: #58c2ff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.6 ease;
+  opacity: 0.5;
+}
+
+.active,
+.dot:hover {
+  opacity: 1;
+}
