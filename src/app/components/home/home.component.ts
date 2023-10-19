@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   logoPath: string = 'assets/psi-logo.png';
+
   images = [
     {
       imageSrc:
