@@ -3,6 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 interface carouselImage {
   imageSrc: string;
   imageAlt: string;
+  route: string;
 }
 
 @Component({
