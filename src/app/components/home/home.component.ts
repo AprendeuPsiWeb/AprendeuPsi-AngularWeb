@@ -28,4 +28,10 @@ export class HomeComponent {
       route: '',
     },
   ];
+
+  selectedTab: string = 'about';
+
+  changeTab(tab: string): void {
+    this.selectedTab = tab;
+  }
 }
