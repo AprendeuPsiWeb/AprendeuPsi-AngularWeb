@@ -1,0 +1,39 @@
+.generic-card {
+  max-width: 400px;
+  margin-bottom: 8px;
+  padding: 5px;
+  border: none;
+  box-shadow: none;
+}
+
+mat-card-title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-card-title {
+  color: rgba(35, 40, 89, 1);
+  font-size: 1.5rem;
+  padding: 8px 0;
+}
+
+mat-card-subtitle {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #269ea3;
+}
+
+.imgOrder img {
+  order: -1;
+  height: 329px;
+  width: 301;
+  margin-bottom: 15px;
+}
+
+mat-card-content {
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+}

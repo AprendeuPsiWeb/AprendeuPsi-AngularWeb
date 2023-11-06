@@ -11,9 +11,18 @@ import { MatMenuModule } from '@angular/material/menu';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { CardComponent } from './components/card/card.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, AboutUsComponent, HomeComponent, CarouselComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    AboutUsComponent,
+    HomeComponent,
+    CarouselComponent,
+    CardComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -21,6 +30,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
