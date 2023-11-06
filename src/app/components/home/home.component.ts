@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   logoPath: string = 'assets/psi-logo.png';
+
   images = [
     {
       imageSrc:
@@ -27,4 +28,10 @@ export class HomeComponent {
       route: '',
     },
   ];
+
+  selectedTab: string = 'about';
+
+  changeTab(tab: string): void {
+    this.selectedTab = tab;
+  }
 }
