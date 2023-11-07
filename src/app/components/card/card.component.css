@@ -1,3 +1,9 @@
+main {
+  display: flex;
+  gap: 50px;
+  padding: 50px;
+}
+
 .generic-card {
   max-width: 400px;
   margin-bottom: 8px;
@@ -33,7 +39,16 @@ mat-card-subtitle {
 }
 
 mat-card-content {
+  display: flex;
   text-align: center;
   padding: 10px;
   font-size: 1rem;
+}
+
+.arrow-down {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
 }
