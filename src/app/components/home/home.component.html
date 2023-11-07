@@ -11,15 +11,23 @@
     </div>
   </section>
 
-<<<<<<< HEAD
-<app-carousel [images]="images" [autoSlide]="true"></app-carousel>
-<app-card></app-card>
-=======
+  <app-carousel [images]="images" [autoSlide]="true"></app-carousel>
+  <app-card></app-card>
 
   <section class="info-container">
     <div class="tabs">
-      <div (click)="changeTab('about')" [class.active]="selectedTab === 'about'">Sobre este curso</div>
-      <div (click)="changeTab('learn')" [class.active]="selectedTab === 'learn'">O que você aprenderá</div>
+      <div
+        (click)="changeTab('about')"
+        [class.active]="selectedTab === 'about'"
+      >
+        Sobre este curso
+      </div>
+      <div
+        (click)="changeTab('learn')"
+        [class.active]="selectedTab === 'learn'"
+      >
+        O que você aprenderá
+      </div>
     </div>
 
     <div class="content">
@@ -38,37 +46,49 @@
         </span>
       </div>
       <div *ngIf="selectedTab === 'about'">
-        <p>Aprofunde seus conhecimentos sobre o entendimento e a aplicação abrangente dos cuidados paliativos em
-          contextos diversos.
+        <p>
+          Aprofunde seus conhecimentos sobre o entendimento e a aplicação
+          abrangente dos cuidados paliativos em contextos diversos.
         </p>
         <p>
-          Desenvolva habilidades teóricas e práticas para se comunicar de maneira eficaz com pacientes, familiares e
-          equipes de saúde, priorizando uma abordagem empática e centrada no paciente.
+          Desenvolva habilidades teóricas e práticas para se comunicar de
+          maneira eficaz com pacientes, familiares e equipes de saúde,
+          priorizando uma abordagem empática e centrada no paciente.
         </p>
         <p>
-          Saiba como tomar decisões embasadas em evidências científicas e agir com ética e profissionalismo em todas as
-          situações, além de estar preparado para acompanhar pacientes e suas famílias em todas as fases da doença,
-          mesmo nos cenários mais difíceis, como a fase final de vida.
+          Saiba como tomar decisões embasadas em evidências científicas e agir
+          com ética e profissionalismo em todas as situações, além de estar
+          preparado para acompanhar pacientes e suas famílias em todas as fases
+          da doença, mesmo nos cenários mais difíceis, como a fase final de
+          vida.
         </p>
       </div>
       <div *ngIf="selectedTab === 'learn'">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corporis alias doloribus fugit architecto
-          molestias voluptatum! Deleniti nemo neque quisquam vero nam temporibus at numquam, error libero earum odio
-          sapiente enim quasi. Veritatis est sint voluptatum impedit quae, optio quis ipsam similique tenetur quibusdam
-          veniam enim repudiandae obcaecati illum. Eveniet laborum fugiat sint quibusdam nobis corrupti, distinctio
-          aperiam. Beatae voluptate consectetur recusandae, quo fugiat accusantium provident ab totam blanditiis tenetur
-          quae minus incidunt natus id eaque commodi nam, quos autem ipsa laborum voluptatum magnam! Dolor nostrum quod
-          reiciendis omnis assumenda enim expedita? Ad similique mollitia veritatis voluptatibus. Cumque odit eius
-          ducimus quod eaque repellendus nostrum vel deserunt, eum omnis atque id porro in fugit laudantium debitis enim
-          ab cupiditate nihil ex! Cum sint, praesentium totam voluptate itaque doloribus deleniti, magnam pariatur
-          minima consectetur iste animi atque inventore nemo non quod necessitatibus ab similique culpa dolorum
-          consequuntur quasi ex. Quam odit, laudantium, itaque nam ut repellat rem libero ab consequuntur nihil
-          doloremque. Numquam delectus doloribus nobis commodi voluptatem ad est officia adipisci voluptatum quisquam a
-          eos sunt amet sit quasi atque, quae, in sequi fuga pariatur esse minima provident? Quaerat dolores, voluptates
-          delectus eaque est laudantium nostrum eveniet perferendis expedita facilis?</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corporis
+          alias doloribus fugit architecto molestias voluptatum! Deleniti nemo
+          neque quisquam vero nam temporibus at numquam, error libero earum odio
+          sapiente enim quasi. Veritatis est sint voluptatum impedit quae, optio
+          quis ipsam similique tenetur quibusdam veniam enim repudiandae
+          obcaecati illum. Eveniet laborum fugiat sint quibusdam nobis corrupti,
+          distinctio aperiam. Beatae voluptate consectetur recusandae, quo
+          fugiat accusantium provident ab totam blanditiis tenetur quae minus
+          incidunt natus id eaque commodi nam, quos autem ipsa laborum
+          voluptatum magnam! Dolor nostrum quod reiciendis omnis assumenda enim
+          expedita? Ad similique mollitia veritatis voluptatibus. Cumque odit
+          eius ducimus quod eaque repellendus nostrum vel deserunt, eum omnis
+          atque id porro in fugit laudantium debitis enim ab cupiditate nihil
+          ex! Cum sint, praesentium totam voluptate itaque doloribus deleniti,
+          magnam pariatur minima consectetur iste animi atque inventore nemo non
+          quod necessitatibus ab similique culpa dolorum consequuntur quasi ex.
+          Quam odit, laudantium, itaque nam ut repellat rem libero ab
+          consequuntur nihil doloremque. Numquam delectus doloribus nobis
+          commodi voluptatem ad est officia adipisci voluptatum quisquam a eos
+          sunt amet sit quasi atque, quae, in sequi fuga pariatur esse minima
+          provident? Quaerat dolores, voluptates delectus eaque est laudantium
+          nostrum eveniet perferendis expedita facilis?
+        </p>
       </div>
     </div>
-
   </section>
 </div>
->>>>>>> 44f74fff499aeba1141f5a1b82c1651a6a097d46

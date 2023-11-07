@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-card',
@@ -27,7 +26,6 @@ export class CardComponent {
         ? undefined
         : this.sliceOptions.default;
 
-    this.expandText =
-      this.expandText === this.expandText ? 'Ver menos' : 'Ver mais';
+    this.expandText = this.expandText === 'Ver mais' ? 'Ver menos' : 'Ver mais';
   }
 }
