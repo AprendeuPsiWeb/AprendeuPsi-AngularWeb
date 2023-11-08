@@ -1,4 +1,13 @@
 import { Component } from '@angular/core';
+import { MockDatabaseService } from '../../mock-database.service';
+
+interface mockData {
+  id: number;
+  photo: string;
+  name: string;
+  status: string;
+  description: string;
+}
 
 @Component({
   selector: 'app-card',
@@ -12,13 +21,13 @@ export class CardComponent {
     default: 100,
   };
 
+  data: any[];
+
+  constructor(private mockDatabaseService: MockDatabaseService) {
+    this.data = this.mockDatabaseService.getAllData();
+  }
+
   expandText = 'Ver mais';
-
-  details = {
-    desc: `Psicóloga com título de especialista em Psicologia Clínica e Psicologia da Saúde pelo Conselho Federal de Psicologia. Especialista em Saúde Mental e Psiquiatria pelo Hospital das Clínicas da USP. Formação em Psicopatologia.
-
-  Psicóloga no SUS desde 2016 em serviços da rede de atenção psicossocial.`,
-  };
 
   onExpandText(evt: any): void {
     this.sliceOptions.end =

@@ -6,10 +6,17 @@ main {
 
 .generic-card {
   max-width: 400px;
+  width: 340px;
   margin-bottom: 8px;
   padding: 5px;
   border: none;
   box-shadow: none;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
 mat-card-title-group {

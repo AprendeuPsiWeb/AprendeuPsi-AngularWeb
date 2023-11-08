@@ -1,37 +1,24 @@
 <main>
-  <mat-card class="generic-card">
-    <mat-card-header>
-      <mat-card-title-group class="imgOrder">
-        <img
-          src="https://lh6.googleusercontent.com/UVuXiJiAN7qLpMsYHY90aU1oTD6pxxO77RyDgRJZ5tW30TeqXhsKIjJnV390B8QKEZUC4U0Pp5CSa0q_3jKp0vcJsFL1-3Ix5TY8s_MU0QYc_Mr-7178-Tj9-Fi4WC3REw=w1280"
-        />
-        <mat-card-title>Laís Ladeia B. Rocha</mat-card-title>
-        <mat-card-subtitle>Psicóloga Responsável pelo Curso</mat-card-subtitle>
-      </mat-card-title-group>
-    </mat-card-header>
-    <mat-card-content>
-      {{ details.desc }}
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card class="generic-card">
-    <mat-card-header>
-      <mat-card-title-group class="imgOrder">
-        <img
-          src="https://lh6.googleusercontent.com/UVuXiJiAN7qLpMsYHY90aU1oTD6pxxO77RyDgRJZ5tW30TeqXhsKIjJnV390B8QKEZUC4U0Pp5CSa0q_3jKp0vcJsFL1-3Ix5TY8s_MU0QYc_Mr-7178-Tj9-Fi4WC3REw=w1280"
-        />
-        <mat-card-title>Laís Ladeia B. Rocha</mat-card-title>
-        <mat-card-subtitle>Psicóloga Responsável pelo Curso</mat-card-subtitle>
-      </mat-card-title-group>
-    </mat-card-header>
-    <mat-card-content>
-      {{ details.desc | slice : sliceOptions.start : sliceOptions.end }}
-    </mat-card-content>
-    <button
-      class="arrow-down"
-      *ngIf="details.desc.length >= sliceOptions.default"
-    >
-      <span (click)="onExpandText($event)">{{ expandText }} </span>
-    </button>
-  </mat-card>
+  <ul>
+    <li *ngFor="let item of data">
+      <mat-card class="generic-card">
+        <mat-card-header>
+          <mat-card-title-group class="imgOrder">
+            <img src="{{ item.photo }}" alt="" />
+            <mat-card-title>{{ item.name }}</mat-card-title>
+            <mat-card-subtitle>{{ item.status }}</mat-card-subtitle>
+          </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+          {{ item.description | slice : sliceOptions.start : sliceOptions.end }}
+        </mat-card-content>
+        <button
+          class="arrow-down"
+          *ngIf="item.description.length >= sliceOptions.default"
+        >
+          <span (click)="onExpandText($event)">{{ expandText }} </span>
+        </button>
+      </mat-card>
+    </li>
+  </ul>
 </main>
